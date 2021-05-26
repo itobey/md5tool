@@ -201,6 +201,9 @@ def main():
             print("  expected hash  {0}".format(expected_hash))
             print("  actual hash is {0}".format(actual_hash))
         print("===============================================================")
+		
+        if errors:
+            sys.exit(2)
 
     elif operation == 'generate':
         # Generate an .md5 file for files which don't have one
